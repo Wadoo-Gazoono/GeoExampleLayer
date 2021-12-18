@@ -1,6 +1,6 @@
 package com.Wadoo.geckolayermod;
 
-import com.Wadoo.geckolayermod.server.registry.GeckoEntityRegistry;
+import com.Wadoo.geckolayermod.server.registry.EntityRegister;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -21,7 +21,7 @@ public class GeckoLayerMod
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
         MinecraftForge.EVENT_BUS.register(this);
-        GeckoEntityRegistry.ENTITIES.register(bus);
+        EntityRegister.ENTITIES.register(bus);
         GeckoLib.initialize();
     }
 

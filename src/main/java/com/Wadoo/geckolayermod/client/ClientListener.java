@@ -1,8 +1,8 @@
 package com.Wadoo.geckolayermod.client;
 
 import com.Wadoo.geckolayermod.GeckoLayerMod;
-import com.Wadoo.geckolayermod.client.renderer.LayerEntityRenderer;
-import com.Wadoo.geckolayermod.server.registry.GeckoEntityRegistry;
+import com.Wadoo.geckolayermod.client.renderer.LERenderer;
+import com.Wadoo.geckolayermod.server.registry.EntityRegister;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -15,7 +15,7 @@ public class ClientListener {
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(GeckoEntityRegistry.GEOLAYERENTITY.get(), LayerEntityRenderer::new);
+        event.registerEntityRenderer(EntityRegister.GEOLAYERENTITY.get(), LERenderer::new);
 
     }
 }

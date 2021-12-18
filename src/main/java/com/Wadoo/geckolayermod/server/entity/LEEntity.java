@@ -18,7 +18,7 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 
-public class GeoLayerEntity extends PathfinderMob implements IAnimatable, IAnimationTickable {
+public class LEEntity extends PathfinderMob implements IAnimatable, IAnimationTickable {
     private AnimationFactory factory = new AnimationFactory(this);
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
@@ -26,7 +26,7 @@ public class GeoLayerEntity extends PathfinderMob implements IAnimatable, IAnima
             return PlayState.CONTINUE;
     }
 
-    public GeoLayerEntity(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public LEEntity(EntityType<? extends PathfinderMob> type, Level worldIn) {
         super(type, worldIn);
     }
 
