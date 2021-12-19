@@ -13,5 +13,8 @@ public class CommonListener {
     public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
             event.put(EntityRegister.GEOLAYERENTITY.get(),
                     Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 1.0D).add(Attributes.MOVEMENT_SPEED, 0.25f).build());
+
+            event.put(EntityRegister.GEOATTACKENTITY.get(),
+                Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 15.0D).add(Attributes.MOVEMENT_SPEED, 0.27f).build());
     }
 }
