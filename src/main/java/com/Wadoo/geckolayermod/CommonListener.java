@@ -15,6 +15,6 @@ public class CommonListener {
                     Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 1.0D).add(Attributes.MOVEMENT_SPEED, 0.25f).build());
 
             event.put(EntityRegister.GEOATTACKENTITY.get(),
-                Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 15.0D).add(Attributes.MOVEMENT_SPEED, 0.27f).build());
+                Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 15.0D).add(Attributes.MOVEMENT_SPEED, 0.27f).add(Attributes.ATTACK_DAMAGE, 4.0f).build());
     }
 }
